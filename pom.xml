@@ -49,10 +49,16 @@
             <artifactId>servlet-api</artifactId>
         </dependency>
 
+        <!-- word 转 pdf -->
         <dependency>
             <groupId>fr.opensagres.xdocreport</groupId>
             <artifactId>fr.opensagres.poi.xwpf.converter.pdf</artifactId>
-            <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>4.3.6.RELEASE</version>
         </dependency>
 
     </dependencies>
@@ -60,15 +66,10 @@
     <!-- 配置部署构建到私服 -->
     <distributionManagement>
         <repository>
-            <id>rdc-releases</id>
-            <url>https://repo.rdc.aliyun.com/repository/120621-release-HldziT/</url>
-            <name>rdc-releases</name>
+            <id>3rdParty</id>
+            <url>http://192.168.110.240:9091/repository/3rdParty/</url>
+            <name>3rdParty</name>
         </repository>
-        <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <url>https://repo.rdc.aliyun.com/repository/120621-snapshot-8OYdpv/</url>
-            <name>rdc-snapshots</name>
-        </snapshotRepository>
     </distributionManagement>
 
 </project>
